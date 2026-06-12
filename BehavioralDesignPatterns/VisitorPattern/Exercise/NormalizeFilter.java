@@ -1,0 +1,13 @@
+package BehavioralDesignPatterns.VisitorPattern.Exercise;
+
+public class NormalizeFilter implements Filters{
+    @Override
+    public void apply(FormatSegment formatSegment) {
+        System.out.println("Normalize on format segment");
+    }
+
+    @Override
+    public void apply(FactSegment factSegment) {
+        System.out.println("Normalize on fact segment");
+    }
+}
